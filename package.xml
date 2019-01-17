@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>ladybug_debayer</name>
+    <version>1.0.0</version>
+    <description>Convenience package for debayering images from the ladybug camera.</description>
+    <maintainer email="sjphilli@uwaterloo.ca">Steve Phillips</maintainer>
+    <license>BSD</license>
+    <url type="website"></url>
+    <author>Steve Phillips</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <depend>image_transport</depend>
+    <depend>roscpp</depend>
+    <depend>nodelet</depend>
+    <depend>sensor_msgs</depend>
+    <depend>ladybug_msgs</depend>
+    <depend>libraw1394-dev</depend>
+    <depend>libdc1394-dev</depend>
+
+    <test_depend>roslaunch</test_depend>
+    <test_depend>roslint</test_depend>
+
+    <export>
+        <nodelet plugin="${prefix}/nodelet_plugins.xml"/>
+    </export>
+</package>

@@ -1,0 +1,7 @@
+<library path="lib/libDebayerNodelet">
+    <class name="ladybug_debayer/DebayerNodelet"
+           type="ladybug_debayer::DebayerNodelet"
+           base_class_type="nodelet::Nodelet">
+        <description>This is the nodelet.</description>
+    </class>
+</library>
